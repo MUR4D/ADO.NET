@@ -56,7 +56,7 @@ join priority p on t.priorityId = p.id",this.sqlConnection);
 
     public bool DeleteTask(int taskId)
     {
-        var  command = new SqlCommand(cmdText:$@"delete from Task t where t.taskId = {taskId}",this.sqlConnection);
+        var  command = new SqlCommand(cmdText:$@"delete from Task where Id = {taskId}",this.sqlConnection);
 
         return command.ExecuteNonQuery() > 0;
 

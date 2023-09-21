@@ -33,6 +33,11 @@ static class Menu
                         Console.Clear();
                          ret = items[choose];
                         return ret;
+                    case ConsoleKey.Escape:
+                    Console.Clear();
+                    ret = "0"; 
+                    return ret;
+                    break;
                     default:
                     
                         break;

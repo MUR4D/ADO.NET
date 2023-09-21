@@ -21,9 +21,9 @@ namespace ToDoList.Entities
             
         }
 
-        public Task(int Id, string Name, string Status, string Priority)
+        public Task( string Name, string Status, string Priority)
         {
-            this.Id = Id;
+           // this.Id = Id;
             this.Name = Name;
             this.Status = Status;
             this.Priority = Priority;
